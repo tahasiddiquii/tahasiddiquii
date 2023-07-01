@@ -10,7 +10,7 @@
 
 - 📫 How to reach me **tahasiddiqui@spillmate.ai**
 
-- 📄 Know about my experiences [https://resume.io/r/LdsFrnvtC](https://resume.io/r/LdsFrnvtC)
+- 📄 Know about my experiences https://tinyurl.com/ywmmh537
 
 - ⚡ Fun fact **My code has a great sense of humor. It throws unexpected errors just to keep me entertained. It's like having a stand-up comedian as my coding partner!**
 
