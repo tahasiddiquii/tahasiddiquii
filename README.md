@@ -1,15 +1,15 @@
 <h1 align="center">Hi 👋, I'm Taha</h1>
 <h3 align="center">Data scientist by day, data destroyer by night—finding patterns in chaos, one catastrophe at a time!</h3>
 
-- 🔭 I’m currently working on **Spillmate**
+- I’m currently working on **Spillmate**
 
-- 🌱 I’m currently learning **LangChain, LLMs**
+- I’m currently learning **LangChain, LLMs**
 
-- 📝 I regularly write articles on [tahasiddiqui.me](tahasiddiqui.me)
+- I regularly write articles on [tahasiddiqui.me](tahasiddiqui.me)
 
-- 📫 How to reach me **tahasiddiqui@spillmate.ai**
+- How to reach me **tahasiddiqui@spillmate.ai**
 
-- 📄 Know about my experiences https://tinyurl.com/ywmmh537
+- Know about my experiences https://tinyurl.com/ywmmh537
 
 - ⚡ Fun fact **My code has a great sense of humor. It throws unexpected errors just to keep me entertained. It's like having a stand-up comedian as my coding partner!**
 
