@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">Data scientist by day, data destroyer by night—finding patterns in chaos, one catastrophe at a time!</h3>
+<h3 align="center">Aspiring AI/ML Engineer looking for opportunities on the areas of Tech Research & Development in Business. With Bachelors in AIML, practical experience in diverse AI/ML areas and strong communication skills, I am passionate about using AI to solve challenging business problems</h3>
 
 - I’m currently working on **Spillmate**
 
