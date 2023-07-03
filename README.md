@@ -5,7 +5,7 @@
 
 - I’m currently learning **LangChain, LLMs**
 
-- I regularly write articles on [tahasiddiqui.me](tahasiddiqui.me)
+- I regularly write articles on https://tahasiddiqui.me/
 
 - How to reach me **tahasiddiqui@spillmate.ai**
 
