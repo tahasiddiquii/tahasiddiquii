@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">I build stuff for fun!</h3>
+<h3 align="center">I build stuff for fun, building AI apps these days..</h3>
 
 - I’m currently working on **Spillmate**
 
