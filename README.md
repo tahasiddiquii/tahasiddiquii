@@ -7,7 +7,7 @@
 
 - I regularly write articles on https://tahasiddiqui.me/
 
-- How to reach me **tahasiddiqui@spillmate.ai**
+- Reach out to me at **tahasiddiqui@spillmate.ai**
 
 - Know about my experiences https://tinyurl.com/ywmmh537
 
