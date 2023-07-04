@@ -11,11 +11,9 @@
 
 - Know about my experiences https://tinyurl.com/ywmmh537
 
-- ⚡ Fun fact **My code has a great sense of humor. It throws unexpected errors just to keep me entertained. It's like having a stand-up comedian as my coding partner!**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  <a href="https://twitter.com/tahasiddiquiiii" target="blank">Twitter</a>
-  <a href="https://linkedin.com/in/connecttaha" target="blank">LinkedIn</a>
+  <a href="https://linkedin.com/in/connecttaha" target="blank">LinkedIn  </a>
+  <a href="https://twitter.com/tahasiddiquiiii" target="blank">Twitter  </a>
   <a href="https://instagram.com/tahasiddiquiiiii" target="blank">Instagram</a>
 </p>
