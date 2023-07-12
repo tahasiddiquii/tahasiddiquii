@@ -9,7 +9,7 @@
 
 - Reach out to me at **tahasiddiqui@spillmate.ai**
 
-- Know about my experiences https://tinyurl.com/ywmmh537
+- Know about my experiences https://tinyurl.com/tahaai & https://tinyurl.com/tahadev
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
