@@ -1,9 +1,9 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">I build AI apps for fun..</h3>
+<h3 align="center">I build & post repositories of AI apps for fun, let's connect and make some fun AI ML projects.</h3>
 
-- I’m currently working as Software Engineer at **QSS Technosoft**
+- I’m currently working as Software Engineer at **QSS Technosoft.**
 
-- I’m currently learning **Automation**
+- I’m currently learning **Automation** using Selenium in Python.
 
 - I regularly write articles on https://tahasiddiqui.me/
 
