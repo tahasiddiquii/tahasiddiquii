@@ -1,13 +1,13 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">I build stuff for fun, building AI apps these days..</h3>
+<h3 align="center">I build AI apps for fun..</h3>
 
-- I’m currently working on **Spillmate**
+- I’m currently working as Software Engineer at **QSS Technosoft**
 
-- I’m currently learning **LangChain, LLMs**
+- I’m currently learning **Automation**
 
 - I regularly write articles on https://tahasiddiqui.me/
 
-- Reach out to me at **tahasiddiqui@spillmate.ai**
+- Reach out to me at **tahasiddiquix24@gmail.com**
 
 - Know about my experiences https://tinyurl.com/tahaai & https://tinyurl.com/tahadev
 
