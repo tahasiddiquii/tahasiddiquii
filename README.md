@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">I build & post repositories of AI apps for fun, let's connect and make some fun AI ML projects.</h3>
+<h3 align="center">I build & post private repositories of AI apps for fun, let's connect and make some fun AI ML projects.</h3>
 
 - I’m currently working as Software Engineer at **QSS Technosoft.**
 
