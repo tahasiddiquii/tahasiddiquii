@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm Taha</h1>
 
-- Reach out to me at **tahasiddiquix24@gmail.com**
+- Feel free to contact me at **tahasiddiquix24@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
