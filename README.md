@@ -1,15 +1,6 @@
 <h1 align="center">Hi, I'm Taha</h1>
-<h3 align="center">I build & post private repositories of AI apps for fun, let's connect and make some fun AI ML projects.</h3>
-
-- I’m currently working as Software Engineer at **QSS Technosoft.**
-
-- I’m currently learning **Automation** using Selenium in Python.
-
-- I regularly write articles on https://tahasiddiqui.me/
 
 - Reach out to me at **tahasiddiquix24@gmail.com**
-
-- Know about my experiences https://tinyurl.com/tahaai & https://tinyurl.com/tahadev
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
