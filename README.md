@@ -1,6 +1,6 @@
 # Hi, I'm Taha 👋
 
-**AI engineer. Relentless learner. Building tools that matter.**
+**AI engineer. Relentless learner. Building what matters.**
 
 ---
 
