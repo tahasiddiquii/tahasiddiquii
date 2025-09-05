@@ -11,4 +11,4 @@
 
 ---
 
-> “People who are crazy enough to think they can change the world are the ones who do.” – Steve Jobs
+> AI is the new electricity, and I’m a restless learner driven by endless curiosity to explore the cutting edge.
