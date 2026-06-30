@@ -23,6 +23,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 | [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | RAG evaluation harness — retrieval metrics + RAGAS-style faithfulness/relevancy + LLM-judge, per-example Langfuse traces & scores, and an A/B retrieval-depth study behind a CI gate. |
 | [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Guardrails + red-team harness: PII/secret detection & redaction, severity-graded prompt-injection/jailbreak rules, allow/redact/block policy, and a scored attack suite gating CI. |
 | [**hybrid-graph-rag**](https://github.com/tahasiddiquii/hybrid-graph-rag) | Hybrid (BM25 + dense + RRF) and graph multi-hop retrieval with a labeled benchmark (recall@k · MRR · nDCG) and an MCP connector. |
+| [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) 🆕 | **Classic ML** — time-series forecasting (sktime) backtested with expanding-window temporal CV (MASE/sMAPE), leakage-safe feature engineering, and a benchmark gate. Includes the honest finding that the fancy model loses. |
 
 > Common thread: **measure everything, gate on it, never fabricate the metric.** Every
 > number in these READMEs is produced by code you can re-run.
@@ -35,6 +36,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 **Agentic:** LangChain · LangGraph · CrewAI · tool-calling · MCP
 **Quality & safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 **Observability:** Langfuse tracing, scoring, experiment comparison
+**Classic ML:** time-series forecasting (sktime), scikit-learn, temporal cross-validation, feature engineering
 **Engineering:** Python · pytest · ruff · GitHub Actions · Docker
 
 ---
