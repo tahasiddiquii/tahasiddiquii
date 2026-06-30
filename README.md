@@ -18,6 +18,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 
 | Repo | What it demonstrates |
 | --- | --- |
+| [**support-copilot**](https://github.com/tahasiddiquii/support-copilot) 🆕 | **Agentic workflow capstone** — a customer-support agent: LangGraph supervisor + specialist handoffs, deterministic tools, **human-in-the-loop refunds**, guardrails, and an embedded eval gate (zero unsafe refunds, every injection blocked). Composes the four repos below. |
 | [**ai-harness**](https://github.com/tahasiddiquii/ai-harness) | Multi-stage agent harness: intent → routing → guardrails → retrieval → memory → validation → agent, with tools, LLM-as-judge evals, and Langfuse tracing. |
 | [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | RAG evaluation harness — retrieval metrics + RAGAS-style faithfulness/relevancy + LLM-judge, per-example Langfuse traces & scores, and an A/B retrieval-depth study behind a CI gate. |
 | [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Guardrails + red-team harness: PII/secret detection & redaction, severity-graded prompt-injection/jailbreak rules, allow/redact/block policy, and a scored attack suite gating CI. |
