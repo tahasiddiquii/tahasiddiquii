@@ -33,6 +33,8 @@ quality metric, and reports numbers you can reproduce by running the code.
 | [**ai-harness**](https://github.com/tahasiddiquii/ai-harness) | A multi-stage request pipeline: intent, routing, guardrails, retrieval, memory, validation, then the agent. Every stage is traced in Langfuse and scored by LLM-as-judge evals. |
 | [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | A RAG evaluation harness with retrieval metrics, RAGAS-style faithfulness and relevancy, and an LLM judge, each traced and scored per example. It includes an A/B study on retrieval depth behind a CI gate. |
 | [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Detects and redacts PII and secrets, grades prompt-injection and jailbreak attempts by severity, and applies an allow, redact, or block policy. A scored attack suite gates CI. |
+| [**mcp-guardrail-gateway**](https://github.com/tahasiddiquii/mcp-guardrail-gateway) | A security gateway that sits in front of any MCP server, so every tool call clears one checkpoint: role-based access, argument constraints, prompt-injection and secret scanning on both arguments and results, PII redaction, and a tamper-evident audit log. The MCP spec leaves security to the implementor; this is that layer. A red-team suite gates CI at zero unsafe calls allowed, zero PII leaks, and every planted injection neutralized. |
+| [**mcp-knowledge-server**](https://github.com/tahasiddiquii/mcp-knowledge-server) | A permission-aware knowledge MCP server that filters every retrieval by the caller identity before the model sees anything, answers only with grounded citations to accessible documents, and refuses across a permission boundary. The gate proves zero permission leaks and zero ungrounded citations, at full recall on the labeled set. |
 | [**hybrid-graph-rag**](https://github.com/tahasiddiquii/hybrid-graph-rag) | Combines BM25, dense retrieval, and RRF fusion with graph multi-hop lookup, benchmarked on a labeled set for recall@k, MRR, and nDCG. Exposed through an MCP connector. |
 | [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) | Time-series forecasting with sktime, backtested on expanding-window cross-validation using MASE and sMAPE with leakage-safe features. The benchmark shows the complex model losing to the simple one. |
 | [**tabular-ml**](https://github.com/tahasiddiquii/tabular-ml) | Tabular classification with leakage-safe scikit-learn pipelines, cross-validated model selection, and probability calibration. It ships an auto-generated model card and gates on a held-out metric. |
@@ -48,7 +50,7 @@ quality metric, and reports numbers you can reproduce by running the code.
 ### What I work with
 
 - **LLM and RAG:** retrieval (BM25, dense, hybrid RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
-- **Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP
+- **Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP (building servers, a security gateway, and clients)
 - **Quality and safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 - **Observability:** Langfuse tracing, scoring, experiment comparison
 - **Classic ML:** time-series forecasting and classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
