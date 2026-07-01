@@ -38,10 +38,13 @@ quality metric, and reports numbers you can reproduce by running the code.
 | [**mcp-sql-guard**](https://github.com/tahasiddiquii/mcp-sql-guard) | A governed read-only text-to-SQL MCP server. Every statement is parsed to an AST and cleared only if it is a single read-only, allow-listed SELECT; a LIMIT is enforced, PII columns are masked unless the caller's role permits, and every decision is audited. The gate proves zero unsafe statements executed and zero PII exposed to a non-privileged role. |
 | [**mcp-server-audit**](https://github.com/tahasiddiquii/mcp-server-audit) | An evaluation harness that scores any MCP server on tool-selection accuracy, schema-drift (breaking-change) detection, description quality, and production readiness, and runs as an MCP server that audits other servers. The gate proves it catches every breaking change and tells a well-built server (0.92 routing) from a weak one (0.25). |
 | [**hybrid-graph-rag**](https://github.com/tahasiddiquii/hybrid-graph-rag) | Combines BM25, dense retrieval, and RRF fusion with graph multi-hop lookup, benchmarked on a labeled set for recall@k, MRR, and nDCG. Exposed through an MCP connector. |
+| [**agent-memory**](https://github.com/tahasiddiquii/agent-memory) | A long-term memory service for agents: scoped episodic and semantic memory ranked by relevance, recency, and importance together, with consolidation and decay, exposed over MCP. The gate proves ranked recall answers questions a most-recent baseline misses, at zero cross-user leaks. |
+| [**ltr-reranker**](https://github.com/tahasiddiquii/ltr-reranker) | A learning-to-rank reranker, pairwise RankNet over query-document features, that reorders retrieval results and is gated to beat a BM25 baseline on nDCG and MAP. It wins by learning to weight a title match, the signal body BM25 ignores. |
 | [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) | Time-series forecasting with sktime, backtested on expanding-window cross-validation using MASE and sMAPE with leakage-safe features. The benchmark shows the complex model losing to the simple one. |
 | [**tabular-ml**](https://github.com/tahasiddiquii/tabular-ml) | Tabular classification with leakage-safe scikit-learn pipelines, cross-validated model selection, and probability calibration. It ships an auto-generated model card and gates on a held-out metric. |
 | [**timeseries-classification**](https://github.com/tahasiddiquii/timeseries-classification) | Time-series classification with sktime, comparing a majority baseline, KNN-DTW, and a feature-summary model, gated to beat the baseline. The classic distance method wins. |
 | [**drift-detection**](https://github.com/tahasiddiquii/drift-detection) | Detects data and prediction drift with PSI and KS statistics written without SciPy, rolled up to one dataset verdict. The gate is asymmetric because missing real drift costs more than a false alarm. |
+| [**lora-from-scratch**](https://github.com/tahasiddiquii/lora-from-scratch) | LoRA and parameter-efficient fine-tuning implemented and gradient-checked in pure numpy: low-rank adapters on a linear layer that match a full fine-tune while training about 9% of the parameters, with the removable-adapter no-forgetting guarantee. |
 | [**neural-net-from-scratch**](https://github.com/tahasiddiquii/neural-net-from-scratch) | An MLP in pure numpy with hand-derived backprop and SGD, trained on a spiral dataset. A gradient check matches finite differences to 1e-8, which is the math running under model.fit(). |
 
 > The common thread is simple: measure everything, gate CI on it, and never fabricate a
@@ -51,8 +54,8 @@ quality metric, and reports numbers you can reproduce by running the code.
 
 ### What I work with
 
-- **LLM and RAG:** retrieval (BM25, dense, hybrid RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
-- **Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP (building servers, a security gateway, and clients)
+- **LLM and RAG:** retrieval (BM25, dense, hybrid RRF, learning-to-rank reranking), parameter-efficient fine-tuning (LoRA/PEFT), RAGAS-style eval, LLM-as-judge, prompt design
+- **Agentic:** LangChain, LangGraph, CrewAI, tool-calling, agent memory, MCP (building servers, a security gateway, and clients)
 - **Quality and safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 - **Observability:** Langfuse tracing, scoring, experiment comparison
 - **Classic ML:** time-series forecasting and classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
