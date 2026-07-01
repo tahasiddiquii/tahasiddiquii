@@ -22,6 +22,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 | [**invoice-ap-agent**](https://github.com/tahasiddiquii/invoice-ap-agent) 🆕 | **Agentic finance** — accounts-payable automation: LLM extraction + deterministic 3-way match (invoice/PO/receipt) + human-in-the-loop, with a safety gate that no bad invoice is ever auto-approved. "An agent that knows when *not* to be an agent." |
 | [**deep-research-agent**](https://github.com/tahasiddiquii/deep-research-agent) 🆕 | **Manager pattern** — a coordinator orchestrates planner/searcher/synthesizer/fact-checker/writer sub-agents (agents-as-tools) under a hard step+search budget, with every claim traced to a cited source. Faithfulness + budget gated. |
 | [**vendor-risk-agent**](https://github.com/tahasiddiquii/vendor-risk-agent) 🆕 | **Agentic security/GRC** — third-party security review: assess a vendor questionnaire vs policy, score risk, draft a cited memo, with human sign-off and a gate that no critical gap is ever auto-cleared. |
+| [**llm-router**](https://github.com/tahasiddiquii/llm-router) 🆕 | **LLMOps / cost** — a cost-aware gateway: semantic cache + difficulty-based model routing that cuts spend ~66% and latency ~57% vs always using the frontier model, measured against a baseline and gated. |
 | [**ai-harness**](https://github.com/tahasiddiquii/ai-harness) | Multi-stage agent harness: intent → routing → guardrails → retrieval → memory → validation → agent, with tools, LLM-as-judge evals, and Langfuse tracing. |
 | [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | RAG evaluation harness — retrieval metrics + RAGAS-style faithfulness/relevancy + LLM-judge, per-example Langfuse traces & scores, and an A/B retrieval-depth study behind a CI gate. |
 | [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Guardrails + red-team harness: PII/secret detection & redaction, severity-graded prompt-injection/jailbreak rules, allow/redact/block policy, and a scored attack suite gating CI. |
@@ -29,6 +30,8 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 | [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) 🆕 | **Classic ML** — time-series forecasting (sktime) backtested with expanding-window temporal CV (MASE/sMAPE), leakage-safe feature engineering, and a benchmark gate. Includes the honest finding that the fancy model loses. |
 | [**tabular-ml**](https://github.com/tahasiddiquii/tabular-ml) 🆕 | **Classic ML** — tabular classification done right: leakage-safe sklearn pipelines, cross-validated model selection, calibration, an auto-generated model card, and a held-out metric gate. |
 | [**timeseries-classification**](https://github.com/tahasiddiquii/timeseries-classification) 🆕 | **Classic ML** — time-series classification (sktime): majority baseline + KNN-DTW + feature-summary model, gated to beat the baseline. Honest finding: the classic distance method wins. |
+| [**drift-detection**](https://github.com/tahasiddiquii/drift-detection) 🆕 | **MLOps / monitoring** — data & prediction drift via PSI + KS statistics (no SciPy), rolled up to a dataset verdict, validated with an asymmetric gate: never miss real drift, never false-alarm. |
+| [**neural-net-from-scratch**](https://github.com/tahasiddiquii/neural-net-from-scratch) 🆕 | **DL fundamentals** — an MLP in pure numpy: hand-derived backprop + SGD, trained on a spiral, with a gradient check matching finite differences to ~1e-8. The math under `model.fit()`. |
 
 > Common thread: **measure everything, gate on it, never fabricate the metric.** Every
 > number in these READMEs is produced by code you can re-run.
@@ -42,6 +45,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 **Quality & safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 **Observability:** Langfuse tracing, scoring, experiment comparison
 **Classic ML:** time-series forecasting & classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
+**MLOps & fundamentals:** LLM cost routing + semantic caching, drift/monitoring (PSI/KS), neural nets & backprop from scratch (numpy)
 **Engineering:** Python · pytest · ruff · GitHub Actions · Docker
 
 ---
