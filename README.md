@@ -1,60 +1,60 @@
-# Hi, I'm Taha 👋
+# Taha Siddiqui
 
-**AI Engineer — production LLM/RAG & agentic systems, evaluation, guardrails, and observability.**
+**AI Engineer building production LLM, RAG, and agentic systems.**
 
-I build the *engineering scaffolding* around LLMs that makes them shippable: multi-stage
-agent harnesses, retrieval that's actually measured, guardrails + red-teaming, and the
-tracing/eval gates that keep quality from regressing in CI. ~3 years building production
-AI for enterprise (RAG + red-teaming in finance & healthcare).
+Most LLM prototypes work once, then break in production. The cause is rarely the model. It is
+the missing scaffolding around it: retrieval you can measure, guardrails that stop prompt
+injection, and eval gates that catch a regression before it ships. I build that layer and gate
+CI on the numbers, so quality cannot degrade quietly.
 
-🔭 **Open to AI / LLM engineering roles.** Email me: [work.tahasiddiqui@gmail.com](mailto:work.tahasiddiqui@gmail.com)
+Three years doing this for enterprise RAG and red-teaming in finance and healthcare.
+
+Open to AI and LLM engineering roles: [work.tahasiddiqui@gmail.com](mailto:work.tahasiddiqui@gmail.com)
 
 ---
 
-### 🚀 Featured work — harness engineering & AI observability
+### Featured work
 
-These are standalone, runnable repos. Each one runs **fully offline with zero API keys**,
-has a **green CI quality gate**, and reports **real, reproducible numbers** (never hand-waved).
+Standalone, runnable repos. Each one runs offline with no API keys, gates its own CI on a
+quality metric, and reports numbers you can reproduce by running the code.
 
-| Repo | What it demonstrates |
+| Repo | What it does |
 | --- | --- |
-| [**llm-extraction-pipeline**](https://github.com/tahasiddiquii/llm-extraction-pipeline) 🆕 | **Data-engineering flagship** — LLMs as *extraction infrastructure*: rule-vs-LLM triage (structure→parser, prose→model, justified by per-route metrics), validated structured outputs, **cost-capped** model routing, a measured precision/recall eval + **vendor-model drift detection**, embedding **entity resolution**, and an **Airflow 3** ETL DAG. Precision 1.00 · recall 0.975; 40% of docs parsed with no model. |
-| [**support-copilot**](https://github.com/tahasiddiquii/support-copilot) 🆕 | **Agentic workflow capstone** — a customer-support agent: LangGraph supervisor + specialist handoffs, deterministic tools, **human-in-the-loop refunds**, guardrails, and an embedded eval gate (zero unsafe refunds, every injection blocked). Composes the four repos below. |
-| [**invoice-ap-agent**](https://github.com/tahasiddiquii/invoice-ap-agent) 🆕 | **Agentic finance** — accounts-payable automation: LLM extraction + deterministic 3-way match (invoice/PO/receipt) + human-in-the-loop, with a safety gate that no bad invoice is ever auto-approved. "An agent that knows when *not* to be an agent." |
-| [**deep-research-agent**](https://github.com/tahasiddiquii/deep-research-agent) 🆕 | **Manager pattern** — a coordinator orchestrates planner/searcher/synthesizer/fact-checker/writer sub-agents (agents-as-tools) under a hard step+search budget, with every claim traced to a cited source. Faithfulness + budget gated. |
-| [**vendor-risk-agent**](https://github.com/tahasiddiquii/vendor-risk-agent) 🆕 | **Agentic security/GRC** — third-party security review: assess a vendor questionnaire vs policy, score risk, draft a cited memo, with human sign-off and a gate that no critical gap is ever auto-cleared. |
-| [**llm-router**](https://github.com/tahasiddiquii/llm-router) 🆕 | **LLMOps / cost** — a cost-aware gateway: semantic cache + difficulty-based model routing that cuts spend ~66% and latency ~57% vs always using the frontier model, measured against a baseline and gated. |
-| [**ai-harness**](https://github.com/tahasiddiquii/ai-harness) | Multi-stage agent harness: intent → routing → guardrails → retrieval → memory → validation → agent, with tools, LLM-as-judge evals, and Langfuse tracing. |
-| [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | RAG evaluation harness — retrieval metrics + RAGAS-style faithfulness/relevancy + LLM-judge, per-example Langfuse traces & scores, and an A/B retrieval-depth study behind a CI gate. |
-| [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Guardrails + red-team harness: PII/secret detection & redaction, severity-graded prompt-injection/jailbreak rules, allow/redact/block policy, and a scored attack suite gating CI. |
-| [**hybrid-graph-rag**](https://github.com/tahasiddiquii/hybrid-graph-rag) | Hybrid (BM25 + dense + RRF) and graph multi-hop retrieval with a labeled benchmark (recall@k · MRR · nDCG) and an MCP connector. |
-| [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) 🆕 | **Classic ML** — time-series forecasting (sktime) backtested with expanding-window temporal CV (MASE/sMAPE), leakage-safe feature engineering, and a benchmark gate. Includes the honest finding that the fancy model loses. |
-| [**tabular-ml**](https://github.com/tahasiddiquii/tabular-ml) 🆕 | **Classic ML** — tabular classification done right: leakage-safe sklearn pipelines, cross-validated model selection, calibration, an auto-generated model card, and a held-out metric gate. |
-| [**timeseries-classification**](https://github.com/tahasiddiquii/timeseries-classification) 🆕 | **Classic ML** — time-series classification (sktime): majority baseline + KNN-DTW + feature-summary model, gated to beat the baseline. Honest finding: the classic distance method wins. |
-| [**drift-detection**](https://github.com/tahasiddiquii/drift-detection) 🆕 | **MLOps / monitoring** — data & prediction drift via PSI + KS statistics (no SciPy), rolled up to a dataset verdict, validated with an asymmetric gate: never miss real drift, never false-alarm. |
-| [**neural-net-from-scratch**](https://github.com/tahasiddiquii/neural-net-from-scratch) 🆕 | **DL fundamentals** — an MLP in pure numpy: hand-derived backprop + SGD, trained on a spiral, with a gradient check matching finite differences to ~1e-8. The math under `model.fit()`. |
+| [**llm-extraction-pipeline**](https://github.com/tahasiddiquii/llm-extraction-pipeline) | Treats LLM extraction as infrastructure: rules parse structured pages and only messy prose reaches a model, which is then validated, cost-capped, deduplicated, and loaded through an Airflow 3 DAG. Per-route metrics justify each routing decision, and 40% of documents never touch a model. Precision 1.00, recall 0.975. |
+| [**support-copilot**](https://github.com/tahasiddiquii/support-copilot) | A customer-support agent built as a LangGraph supervisor with specialist handoffs. Refunds pause for human approval and every tool is deterministic, which is what lets the eval gate prove zero unsafe refunds and no injection getting through. Composes the four repos below. |
+| [**invoice-ap-agent**](https://github.com/tahasiddiquii/invoice-ap-agent) | Accounts-payable automation where the LLM only extracts and the invoice, PO, and receipt three-way match stays deterministic code. That split is what lets a gate guarantee no bad invoice is ever auto-approved. The point is knowing when not to use the agent. |
+| [**deep-research-agent**](https://github.com/tahasiddiquii/deep-research-agent) | A coordinator runs planner, searcher, synthesizer, fact-checker, and writer sub-agents as tools under a fixed step and search budget. Every claim traces back to a cited source, and CI gates on faithfulness and on staying within budget. |
+| [**vendor-risk-agent**](https://github.com/tahasiddiquii/vendor-risk-agent) | Reviews a third-party security questionnaire against policy, scores the risk, and drafts a cited memo for human sign-off. A gate ensures no critical gap is ever auto-cleared. |
+| [**llm-router**](https://github.com/tahasiddiquii/llm-router) | A gateway that caches semantically similar calls and routes by prompt difficulty, so easy requests skip the frontier model. Measured against an always-frontier baseline, it cuts spend by about 66% and latency by about 57%. |
+| [**ai-harness**](https://github.com/tahasiddiquii/ai-harness) | A multi-stage request pipeline: intent, routing, guardrails, retrieval, memory, validation, then the agent. Every stage is traced in Langfuse and scored by LLM-as-judge evals. |
+| [**llm-eval-observability**](https://github.com/tahasiddiquii/llm-eval-observability) | A RAG evaluation harness with retrieval metrics, RAGAS-style faithfulness and relevancy, and an LLM judge, each traced and scored per example. It includes an A/B study on retrieval depth behind a CI gate. |
+| [**llm-guardrails-redteam**](https://github.com/tahasiddiquii/llm-guardrails-redteam) | Detects and redacts PII and secrets, grades prompt-injection and jailbreak attempts by severity, and applies an allow, redact, or block policy. A scored attack suite gates CI. |
+| [**hybrid-graph-rag**](https://github.com/tahasiddiquii/hybrid-graph-rag) | Combines BM25, dense retrieval, and RRF fusion with graph multi-hop lookup, benchmarked on a labeled set for recall@k, MRR, and nDCG. Exposed through an MCP connector. |
+| [**timeseries-forecasting**](https://github.com/tahasiddiquii/timeseries-forecasting) | Time-series forecasting with sktime, backtested on expanding-window cross-validation using MASE and sMAPE with leakage-safe features. The benchmark shows the complex model losing to the simple one. |
+| [**tabular-ml**](https://github.com/tahasiddiquii/tabular-ml) | Tabular classification with leakage-safe scikit-learn pipelines, cross-validated model selection, and probability calibration. It ships an auto-generated model card and gates on a held-out metric. |
+| [**timeseries-classification**](https://github.com/tahasiddiquii/timeseries-classification) | Time-series classification with sktime, comparing a majority baseline, KNN-DTW, and a feature-summary model, gated to beat the baseline. The classic distance method wins. |
+| [**drift-detection**](https://github.com/tahasiddiquii/drift-detection) | Detects data and prediction drift with PSI and KS statistics written without SciPy, rolled up to one dataset verdict. The gate is asymmetric because missing real drift costs more than a false alarm. |
+| [**neural-net-from-scratch**](https://github.com/tahasiddiquii/neural-net-from-scratch) | An MLP in pure numpy with hand-derived backprop and SGD, trained on a spiral dataset. A gradient check matches finite differences to 1e-8, which is the math running under model.fit(). |
 
-> Common thread: **measure everything, gate on it, never fabricate the metric.** Every
-> number in these READMEs is produced by code you can re-run.
+> The common thread is simple: measure everything, gate CI on it, and never fabricate a
+> number. Every metric in these READMEs comes from code you can rerun.
 
 ---
 
-### 🛠️ What I work with
+### What I work with
 
-**LLM/RAG:** retrieval (BM25, dense, hybrid/RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
-**Agentic:** LangChain · LangGraph · CrewAI · tool-calling · MCP
-**Quality & safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
+**LLM and RAG:** retrieval (BM25, dense, hybrid RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
+**Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP
+**Quality and safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 **Observability:** Langfuse tracing, scoring, experiment comparison
-**Classic ML:** time-series forecasting & classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
-**Data engineering:** LLM extraction pipelines (structured outputs, validation/repair), rule-vs-LLM routing, entity resolution/dedup, Airflow ETL, cost ceilings, model-drift detection
-**MLOps & fundamentals:** LLM cost routing + semantic caching, drift/monitoring (PSI/KS), neural nets & backprop from scratch (numpy)
-**Engineering:** Python · pytest · ruff · GitHub Actions · Docker
+**Classic ML:** time-series forecasting and classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
+**Data engineering:** LLM extraction pipelines (structured outputs, validation and repair), rule-vs-LLM routing, entity resolution and dedup, Airflow ETL, cost ceilings, model-drift detection
+**MLOps and fundamentals:** LLM cost routing and semantic caching, drift monitoring (PSI, KS), neural nets and backprop from scratch (numpy)
+**Engineering:** Python, pytest, ruff, GitHub Actions, Docker
 
 ---
 
-### 📫 Connect
+### Connect
 
 - **Email:** [work.tahasiddiqui@gmail.com](mailto:work.tahasiddiqui@gmail.com)
 - **LinkedIn:** [linkedin.com/in/connecttaha](https://linkedin.com/in/connecttaha)
-
-> AI is the new electricity — and I'm a restless learner driven by curiosity to build at the edge of it.
