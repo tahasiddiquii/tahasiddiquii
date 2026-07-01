@@ -43,18 +43,19 @@ quality metric, and reports numbers you can reproduce by running the code.
 
 ### What I work with
 
-**LLM and RAG:** retrieval (BM25, dense, hybrid RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
-**Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP
-**Quality and safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
-**Observability:** Langfuse tracing, scoring, experiment comparison
-**Classic ML:** time-series forecasting and classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
-**Data engineering:** LLM extraction pipelines (structured outputs, validation and repair), rule-vs-LLM routing, entity resolution and dedup, Airflow ETL, cost ceilings, model-drift detection
-**MLOps and fundamentals:** LLM cost routing and semantic caching, drift monitoring (PSI, KS), neural nets and backprop from scratch (numpy)
-**Engineering:** Python, pytest, ruff, GitHub Actions, Docker
+- **LLM and RAG:** retrieval (BM25, dense, hybrid RRF, reranking), RAGAS-style eval, LLM-as-judge, prompt design
+- **Agentic:** LangChain, LangGraph, CrewAI, tool-calling, MCP
+- **Quality and safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
+- **Observability:** Langfuse tracing, scoring, experiment comparison
+- **Classic ML:** time-series forecasting and classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
+- **Data engineering:** LLM extraction pipelines (structured outputs, validation and repair), rule-vs-LLM routing, entity resolution and dedup, Airflow ETL, cost ceilings, model-drift detection
+- **MLOps and fundamentals:** LLM cost routing and semantic caching, drift monitoring (PSI, KS), neural nets and backprop from scratch (numpy)
+- **Engineering:** Python, pytest, ruff, GitHub Actions, Docker
 
 ---
 
 ### Connect
 
+- **Website:** [heytaha.com](https://www.heytaha.com/)
 - **Email:** [work.tahasiddiqui@gmail.com](mailto:work.tahasiddiqui@gmail.com)
 - **LinkedIn:** [linkedin.com/in/connecttaha](https://linkedin.com/in/connecttaha)
