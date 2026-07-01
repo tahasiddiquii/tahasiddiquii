@@ -18,6 +18,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 
 | Repo | What it demonstrates |
 | --- | --- |
+| [**llm-extraction-pipeline**](https://github.com/tahasiddiquii/llm-extraction-pipeline) 🆕 | **Data-engineering flagship** — LLMs as *extraction infrastructure*: rule-vs-LLM triage (structure→parser, prose→model, justified by per-route metrics), validated structured outputs, **cost-capped** model routing, a measured precision/recall eval + **vendor-model drift detection**, embedding **entity resolution**, and an **Airflow 3** ETL DAG. Precision 1.00 · recall 0.975; 40% of docs parsed with no model. |
 | [**support-copilot**](https://github.com/tahasiddiquii/support-copilot) 🆕 | **Agentic workflow capstone** — a customer-support agent: LangGraph supervisor + specialist handoffs, deterministic tools, **human-in-the-loop refunds**, guardrails, and an embedded eval gate (zero unsafe refunds, every injection blocked). Composes the four repos below. |
 | [**invoice-ap-agent**](https://github.com/tahasiddiquii/invoice-ap-agent) 🆕 | **Agentic finance** — accounts-payable automation: LLM extraction + deterministic 3-way match (invoice/PO/receipt) + human-in-the-loop, with a safety gate that no bad invoice is ever auto-approved. "An agent that knows when *not* to be an agent." |
 | [**deep-research-agent**](https://github.com/tahasiddiquii/deep-research-agent) 🆕 | **Manager pattern** — a coordinator orchestrates planner/searcher/synthesizer/fact-checker/writer sub-agents (agents-as-tools) under a hard step+search budget, with every claim traced to a cited source. Faithfulness + budget gated. |
@@ -45,6 +46,7 @@ has a **green CI quality gate**, and reports **real, reproducible numbers** (nev
 **Quality & safety:** evaluation harnesses, guardrails, prompt-injection red-teaming, CI quality gates
 **Observability:** Langfuse tracing, scoring, experiment comparison
 **Classic ML:** time-series forecasting & classification (sktime), scikit-learn, cross-validation, calibration, model cards, feature engineering
+**Data engineering:** LLM extraction pipelines (structured outputs, validation/repair), rule-vs-LLM routing, entity resolution/dedup, Airflow ETL, cost ceilings, model-drift detection
 **MLOps & fundamentals:** LLM cost routing + semantic caching, drift/monitoring (PSI/KS), neural nets & backprop from scratch (numpy)
 **Engineering:** Python · pytest · ruff · GitHub Actions · Docker
 
